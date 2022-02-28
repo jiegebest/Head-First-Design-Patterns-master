@@ -1,12 +1,17 @@
-package headfirst.designpatterns.observer.weather;
+package headfirst.designpatterns.observer.weather.observer.impl;
+
+import headfirst.designpatterns.observer.weather.subject.Subject;
+import headfirst.designpatterns.observer.weather.subject.impl.WeatherData;
+import headfirst.designpatterns.observer.weather.observer.Observer;
+import headfirst.designpatterns.observer.weather.service.DisplayElement;
 
 public class HeatIndexDisplay implements Observer, DisplayElement {
 	float heatIndex = 0.0f;
-	private WeatherData weatherData;
+	private Subject subject;
 
-	public HeatIndexDisplay(WeatherData weatherData) {
-		this.weatherData = weatherData;
-		weatherData.registerObserver(this);
+	public HeatIndexDisplay(Subject subject) {
+		this.subject = subject;
+		subject.registerObserver(this);
 	}
 
 	public void update(float t, float rh, float pressure) {

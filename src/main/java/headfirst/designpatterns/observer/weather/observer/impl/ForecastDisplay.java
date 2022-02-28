@@ -1,19 +1,23 @@
-package headfirst.designpatterns.observer.weather;
+package headfirst.designpatterns.observer.weather.observer.impl;
+
+import headfirst.designpatterns.observer.weather.subject.Subject;
+import headfirst.designpatterns.observer.weather.subject.impl.WeatherData;
+import headfirst.designpatterns.observer.weather.observer.Observer;
+import headfirst.designpatterns.observer.weather.service.DisplayElement;
 
 public class ForecastDisplay implements Observer, DisplayElement {
 	private float currentPressure = 29.92f;  
 	private float lastPressure;
-	private WeatherData weatherData;
+	private Subject subject;
 
-	public ForecastDisplay(WeatherData weatherData) {
-		this.weatherData = weatherData;
-		weatherData.registerObserver(this);
+	public ForecastDisplay(Subject subject) {
+		this.subject = subject;
+		subject.registerObserver(this);
 	}
 
 	public void update(float temp, float humidity, float pressure) {
         lastPressure = currentPressure;
 		currentPressure = pressure;
-
 		display();
 	}
 

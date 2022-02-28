@@ -1,13 +1,14 @@
-package headfirst.designpatterns.observer.weatherobservable;
+package headfirst.designpatterns.observer.weatherobservable.subject;
 	
+import lombok.NoArgsConstructor;
+
 import java.util.Observable;
-	
+
+@NoArgsConstructor
 public class WeatherData extends Observable {
 	private float temperature;
 	private float humidity;
 	private float pressure;
-	
-	public WeatherData() { }
 	
 	public void measurementsChanged() {
 		setChanged();

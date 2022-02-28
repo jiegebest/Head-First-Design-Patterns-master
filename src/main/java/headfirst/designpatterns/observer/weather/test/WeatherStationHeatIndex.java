@@ -1,4 +1,10 @@
-package headfirst.designpatterns.observer.weather;
+package headfirst.designpatterns.observer.weather.test;
+
+import headfirst.designpatterns.observer.weather.observer.impl.CurrentConditionsDisplay;
+import headfirst.designpatterns.observer.weather.observer.impl.ForecastDisplay;
+import headfirst.designpatterns.observer.weather.observer.impl.HeatIndexDisplay;
+import headfirst.designpatterns.observer.weather.observer.impl.StatisticsDisplay;
+import headfirst.designpatterns.observer.weather.subject.impl.WeatherData;
 
 public class WeatherStationHeatIndex {
 
