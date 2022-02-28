@@ -16,7 +16,6 @@
       <excludeFolder url="file://$MODULE_DIR$/src/main/java/headfirst/designpatterns/composite" />
       <excludeFolder url="file://$MODULE_DIR$/src/main/java/headfirst/designpatterns/ducks" />
       <excludeFolder url="file://$MODULE_DIR$/src/main/java/headfirst/designpatterns/facade" />
-      <excludeFolder url="file://$MODULE_DIR$/src/main/java/headfirst/designpatterns/factory" />
       <excludeFolder url="file://$MODULE_DIR$/src/main/java/headfirst/designpatterns/flyweight" />
       <excludeFolder url="file://$MODULE_DIR$/src/main/java/headfirst/designpatterns/iterator" />
       <excludeFolder url="file://$MODULE_DIR$/src/main/java/headfirst/designpatterns/iterenum" />
