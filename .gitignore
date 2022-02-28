@@ -1,0 +1,22 @@
+# Project exclude paths
+/src/main/java/headfirst/designpatterns/adapter/
+/src/main/java/headfirst/designpatterns/bridge/
+/src/main/java/headfirst/designpatterns/builder/
+/src/main/java/headfirst/designpatterns/collections/
+/src/main/java/headfirst/designpatterns/combined/
+/src/main/java/headfirst/designpatterns/combining/
+/src/main/java/headfirst/designpatterns/command/
+/src/main/java/headfirst/designpatterns/composite/
+/src/main/java/headfirst/designpatterns/decorator/
+/src/main/java/headfirst/designpatterns/ducks/
+/src/main/java/headfirst/designpatterns/facade/
+/src/main/java/headfirst/designpatterns/factory/
+/src/main/java/headfirst/designpatterns/flyweight/
+/src/main/java/headfirst/designpatterns/iterator/
+/src/main/java/headfirst/designpatterns/iterenum/
+/src/main/java/headfirst/designpatterns/prototype/
+/src/main/java/headfirst/designpatterns/proxy/
+/src/main/java/headfirst/designpatterns/singleton/
+/src/main/java/headfirst/designpatterns/state/
+/src/main/java/headfirst/designpatterns/templatemethod/
+/target/
