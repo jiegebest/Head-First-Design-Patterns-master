@@ -1,5 +1,7 @@
-package designpatterns.behavior11.iterator.transition;
+package designpatterns.behavior11.iterator.transition.iterator;
  
+import designpatterns.behavior11.iterator.transition.entity.MenuItem;
+
 import java.util.Iterator;
   
 public class DinerMenuIterator implements Iterator<MenuItem> {

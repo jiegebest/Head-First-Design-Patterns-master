@@ -1,4 +1,7 @@
-package designpatterns.behavior11.iterator.transition;
+package designpatterns.behavior11.iterator.transition.service.impl;
+
+import designpatterns.behavior11.iterator.transition.entity.MenuItem;
+import designpatterns.behavior11.iterator.transition.service.Menu;
 
 import java.util.ArrayList;
 import java.util.Iterator;
