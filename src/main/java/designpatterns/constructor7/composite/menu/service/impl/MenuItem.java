@@ -1,4 +1,6 @@
-package designpatterns.constructor7.composite.menu;
+package designpatterns.constructor7.composite.menu.service.impl;
+
+import designpatterns.constructor7.composite.menu.service.MenuComponent;
 
 public class MenuItem extends MenuComponent {
 	String name;

@@ -1,8 +1,12 @@
 package designpatterns.constructor7.composite.menu;
 
+import designpatterns.constructor7.composite.menu.service.MenuComponent;
+import designpatterns.constructor7.composite.menu.service.impl.Menu;
+import designpatterns.constructor7.composite.menu.service.impl.MenuItem;
+
 public class MenuTestDrive {
 	public static void main(String args[]) {
-		MenuComponent pancakeHouseMenu = 
+		MenuComponent pancakeHouseMenu =
 			new Menu("PANCAKE HOUSE MENU", "Breakfast");
 		MenuComponent dinerMenu = 
 			new Menu("DINER MENU", "Lunch");

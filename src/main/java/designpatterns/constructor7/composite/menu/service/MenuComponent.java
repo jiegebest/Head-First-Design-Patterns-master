@@ -1,4 +1,4 @@
-package designpatterns.constructor7.composite.menu;
+package designpatterns.constructor7.composite.menu.service;
 
 public abstract class MenuComponent {
    
