@@ -1,7 +1,7 @@
 package designpatterns.creator5.singleton.stat;
 
 public class Singleton {
-	private static Singleton uniqueInstance = new Singleton();
+	private static final Singleton uniqueInstance = new Singleton();
  
 	private Singleton() {}
  
