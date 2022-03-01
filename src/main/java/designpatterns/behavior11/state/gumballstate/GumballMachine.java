@@ -1,7 +1,12 @@
 package designpatterns.behavior11.state.gumballstate;
 
+import designpatterns.behavior11.state.gumballstate.service.State;
+import designpatterns.behavior11.state.gumballstate.service.impl.HasQuarterState;
+import designpatterns.behavior11.state.gumballstate.service.impl.NoQuarterState;
+import designpatterns.behavior11.state.gumballstate.service.impl.SoldOutState;
+import designpatterns.behavior11.state.gumballstate.service.impl.SoldState;
+
 public class GumballMachine {
- 
 	State soldOutState;
 	State noQuarterState;
 	State hasQuarterState;
@@ -37,14 +42,14 @@ public class GumballMachine {
 		state.dispense();
 	}
  
-	void releaseBall() {
+	public void releaseBall() {
 		System.out.println("A gumball comes rolling out the slot...");
 		if (count > 0) {
 			count = count - 1;
 		}
 	}
- 
-	int getCount() {
+
+	public int getCount() {
 		return count;
 	}
  
@@ -54,7 +59,7 @@ public class GumballMachine {
 		state.refill();
 	}
 
-	void setState(State state) {
+	public void setState(State state) {
 		this.state = state;
 	}
     public State getState() {

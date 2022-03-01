@@ -1,4 +1,7 @@
-package designpatterns.behavior11.state.gumballstate;
+package designpatterns.behavior11.state.gumballstate.service.impl;
+
+import designpatterns.behavior11.state.gumballstate.GumballMachine;
+import designpatterns.behavior11.state.gumballstate.service.State;
 
 public class SoldOutState implements State {
     GumballMachine gumballMachine;
