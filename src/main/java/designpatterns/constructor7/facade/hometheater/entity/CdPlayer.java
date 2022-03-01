@@ -1,4 +1,4 @@
-package designpatterns.constructor7.facade.hometheater;
+package designpatterns.constructor7.facade.hometheater.entity;
 
 public class CdPlayer {
 	String description;

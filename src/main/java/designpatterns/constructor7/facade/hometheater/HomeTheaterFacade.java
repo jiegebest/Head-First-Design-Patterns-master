@@ -1,5 +1,13 @@
 package designpatterns.constructor7.facade.hometheater;
 
+import designpatterns.constructor7.facade.hometheater.entity.*;
+import designpatterns.constructor7.facade.hometheater.entity.StreamingPlayer;
+import designpatterns.constructor7.facade.hometheater.entity.Tuner;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+
+@NoArgsConstructor
+@AllArgsConstructor
 public class HomeTheaterFacade {
 	Amplifier amp;
 	Tuner tuner;
@@ -9,24 +17,7 @@ public class HomeTheaterFacade {
 	TheaterLights lights;
 	Screen screen;
 	PopcornPopper popper;
- 
-	public HomeTheaterFacade(Amplifier amp, 
-				 Tuner tuner, 
-				 StreamingPlayer player, 
-				 Projector projector, 
-				 Screen screen,
-				 TheaterLights lights,
-				 PopcornPopper popper) {
- 
-		this.amp = amp;
-		this.tuner = tuner;
-		this.player = player;
-		this.projector = projector;
-		this.screen = screen;
-		this.lights = lights;
-		this.popper = popper;
-	}
- 
+
 	public void watchMovie(String movie) {
 		System.out.println("Get ready to watch a movie...");
 		popper.on();
@@ -42,8 +33,7 @@ public class HomeTheaterFacade {
 		player.on();
 		player.play(movie);
 	}
- 
- 
+
 	public void endMovie() {
 		System.out.println("Shutting movie theater down...");
 		popper.off();

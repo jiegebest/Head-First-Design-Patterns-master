@@ -1,4 +1,6 @@
-package designpatterns.constructor7.facade.hometheater;
+package designpatterns.constructor7.facade.hometheater.entity;
+
+import designpatterns.constructor7.facade.hometheater.entity.Amplifier;
 
 public class StreamingPlayer {
 	String description;
