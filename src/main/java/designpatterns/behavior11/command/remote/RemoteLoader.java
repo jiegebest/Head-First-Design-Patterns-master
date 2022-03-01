@@ -1,5 +1,11 @@
 package designpatterns.behavior11.command.remote;
 
+import designpatterns.behavior11.command.remote.command.impl.*;
+import designpatterns.behavior11.command.remote.executors.CeilingFan;
+import designpatterns.behavior11.command.remote.executors.GarageDoor;
+import designpatterns.behavior11.command.remote.executors.Light;
+import designpatterns.behavior11.command.remote.executors.Stereo;
+
 public class RemoteLoader {
  
 	public static void main(String[] args) {
@@ -11,29 +17,19 @@ public class RemoteLoader {
 		GarageDoor garageDoor = new GarageDoor("Garage");
 		Stereo stereo = new Stereo("Living Room");
   
-		LightOnCommand livingRoomLightOn = 
-				new LightOnCommand(livingRoomLight);
-		LightOffCommand livingRoomLightOff = 
-				new LightOffCommand(livingRoomLight);
-		LightOnCommand kitchenLightOn = 
-				new LightOnCommand(kitchenLight);
-		LightOffCommand kitchenLightOff = 
-				new LightOffCommand(kitchenLight);
+		LightOnCommand livingRoomLightOn = new LightOnCommand(livingRoomLight);
+		LightOffCommand livingRoomLightOff = new LightOffCommand(livingRoomLight);
+		LightOnCommand kitchenLightOn = new LightOnCommand(kitchenLight);
+		LightOffCommand kitchenLightOff = new LightOffCommand(kitchenLight);
   
-		CeilingFanOnCommand ceilingFanOn = 
-				new CeilingFanOnCommand(ceilingFan);
-		CeilingFanOffCommand ceilingFanOff = 
-				new CeilingFanOffCommand(ceilingFan);
+		CeilingFanOnCommand ceilingFanOn = new CeilingFanOnCommand(ceilingFan);
+		CeilingFanOffCommand ceilingFanOff = new CeilingFanOffCommand(ceilingFan);
  
-		GarageDoorUpCommand garageDoorUp =
-				new GarageDoorUpCommand(garageDoor);
-		GarageDoorDownCommand garageDoorDown =
-				new GarageDoorDownCommand(garageDoor);
+		GarageDoorUpCommand garageDoorUp = new GarageDoorUpCommand(garageDoor);
+		GarageDoorDownCommand garageDoorDown = new GarageDoorDownCommand(garageDoor);
  
-		StereoOnWithCDCommand stereoOnWithCD =
-				new StereoOnWithCDCommand(stereo);
-		StereoOffCommand  stereoOff =
-				new StereoOffCommand(stereo);
+		StereoOnWithCDCommand stereoOnWithCD = new StereoOnWithCDCommand(stereo);
+		StereoOffCommand  stereoOff = new StereoOffCommand(stereo);
  
 		remoteControl.setCommand(0, livingRoomLightOn, livingRoomLightOff);
 		remoteControl.setCommand(1, kitchenLightOn, kitchenLightOff);

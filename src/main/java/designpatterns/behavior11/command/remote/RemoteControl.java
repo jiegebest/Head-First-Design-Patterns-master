@@ -1,5 +1,8 @@
 package designpatterns.behavior11.command.remote;
 
+import designpatterns.behavior11.command.remote.command.Command;
+import designpatterns.behavior11.command.remote.command.impl.NoCommand;
+
 //
 // This is the invoker
 //

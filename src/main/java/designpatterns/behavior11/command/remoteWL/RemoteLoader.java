@@ -1,5 +1,11 @@
 package designpatterns.behavior11.command.remoteWL;
 
+import designpatterns.behavior11.command.remoteWL.command.Command;
+import designpatterns.behavior11.command.remoteWL.executors.CeilingFan;
+import designpatterns.behavior11.command.remoteWL.executors.GarageDoor;
+import designpatterns.behavior11.command.remoteWL.executors.Light;
+import designpatterns.behavior11.command.remoteWL.executors.Stereo;
+
 public class RemoteLoader {
  
 	public static void main(String[] args) {
@@ -15,7 +21,7 @@ public class RemoteLoader {
 		remoteControl.setCommand(1, kitchenLight::on, kitchenLight::off);
 		remoteControl.setCommand(2, ceilingFan::high, ceilingFan::off);
 		
-		Command stereoOnWithCD = () -> { 
+		Command stereoOnWithCD = () -> {
 			stereo.on(); stereo.setCD(); stereo.setVolume(11);
 		};
 		remoteControl.setCommand(3, stereoOnWithCD, stereo::off);

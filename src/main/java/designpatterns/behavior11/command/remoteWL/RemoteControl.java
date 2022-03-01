@@ -1,5 +1,7 @@
 package designpatterns.behavior11.command.remoteWL;
 
+import designpatterns.behavior11.command.remoteWL.command.Command;
+
 //
 // This is the invoker
 //
