@@ -1,4 +1,6 @@
-package designpatterns.behavior11.templatemethod.barista;
+package designpatterns.behavior11.templatemethod.barista.abstracts.impl;
+
+import designpatterns.behavior11.templatemethod.barista.abstracts.CaffeineBeverage;
 
 public class Coffee extends CaffeineBeverage {
 	public void brew() {

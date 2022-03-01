@@ -1,5 +1,10 @@
 package designpatterns.behavior11.templatemethod.barista;
 
+import designpatterns.behavior11.templatemethod.barista.abstracts.impl.Coffee;
+import designpatterns.behavior11.templatemethod.barista.abstracts.impl.CoffeeWithHook;
+import designpatterns.behavior11.templatemethod.barista.abstracts.impl.Tea;
+import designpatterns.behavior11.templatemethod.barista.abstracts.impl.TeaWithHook;
+
 public class BeverageTestDrive {
 	public static void main(String[] args) {
  

@@ -1,17 +1,17 @@
-package designpatterns.behavior11.templatemethod.barista;
+package designpatterns.behavior11.templatemethod.barista.abstracts;
 
 public abstract class CaffeineBeverage {
-  
-	final void prepareRecipe() {
+
+	public final void prepareRecipe() {
 		boilWater();
 		brew();
 		pourInCup();
 		addCondiments();
 	}
  
-	abstract void brew();
-  
-	abstract void addCondiments();
+	protected abstract void brew();
+
+	protected abstract void addCondiments();
  
 	void boilWater() {
 		System.out.println("Boiling water");
